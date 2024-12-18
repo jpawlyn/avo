@@ -1,5 +1,5 @@
 class Avo::Resources::User < Avo::BaseResource
-  self.translation_key = 'avo.resource_translations.user'
+  self.translation_key = 'hello.resource_translations.user'
   self.title = -> {
     record.name
   }
@@ -10,7 +10,7 @@ class Avo::Resources::User < Avo::BaseResource
     end
     description
   }
-  self.translation_key = "avo.resource_translations.user"
+  # self.translation_key = "avo.resource_translations.user"
   self.search = {
     query: -> {
       query.order(created_at: :desc)
